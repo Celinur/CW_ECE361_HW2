@@ -1,0 +1,18 @@
+Celina Wong
+ECE361 Problem 2c:
+Console transcript of output
+
+//gcc compile and execute
+
+C:\Users\15034\Documents\ECE361HW2\Prob2>gcc 2c.c -o 2c
+
+C:\Users\15034\Documents\ECE361HW2\Prob2>2c
+Find the maximum number in an array of numbers
+
+Enter the number of items in the list: 4
+Enter the items as a floating point number: 9.99
+343.2
+14.23
+63.2
+Original list: 9.99 343.20 14.23 63.20
+Largest value: 343.20

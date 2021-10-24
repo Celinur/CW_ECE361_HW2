@@ -1,0 +1,30 @@
+Celina Wong
+ECE 361 Problem 2a:
+Genghis Khan organized his men into groups of 10 soldiers under a "leader
+of 10" (10 soldiers + 1 leader). Ten "leaders of 10" were under a "leader
+of 100." Ten "leaders of 100" were under a "leader of 1000."
+
+Q1: If Khan had an army of 10,000 solders at the lowest level, how many men
+in total were under him in his organization?
+
+A:
+Given lowest rank: 10,000 soldiers
+Next rank: 10,000 / 10 = 1,000
+Next rank: 1,000 / 10 = 100
+Next rank: 100 / 10 = 10
+
+Total: 10,000 + 1,000 + 100 + 10 = 11,110 soldiers.
+
+
+Q2: If Khan had an army of 5,763 soldiers at the lowest level, how many men
+in total were under him in his organization? Assume that the groups of 10
+should contain 10 soldiers, but that one group at each level may need to
+contain fewer.
+
+A:
+Given lowest rank: 5,763 soldiers
+Next rank: 5,763 / 10 = 576.3 = 577
+Next rank: 577 / 10 = 57.7 = 58
+Next rank: 58 / 10 = 5.8 = 6
+
+Total: 5,763 + 577 + 58 + 6 = 6404 soldiers.
