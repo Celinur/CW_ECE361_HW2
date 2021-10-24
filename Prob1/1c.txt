@@ -1,0 +1,18 @@
+Celina Wong
+ECE 361 Problem 1c
+
+//Question
+What is the Big O() for the algorithm that sums the rows and columns in your
+application? Explain why. You do not need to include the code that fills the
+array form the user input in your calculation.
+
+//Answer
+Let n be the number of items in an array.
+A nested "for" loop would give us a notation of O(n^2). Here, we have two
+nested "for" loops that run for a total of five times each, O(n^2) + O(n^2),
+simplifying to 2*O(n^2). Then, we have two more "for" loops that run on linear
+time, O(n). That would give us O(2n) in total. Now, we drop the constants
+because they become less significant as n gets big. Combining all the for loops
+in this program, it becomes O(n^2) + O(n). But Big O also takes into the
+account the highest order of n, so the Big O() notation that sums up the rows
+and columns in the code is O(n^2).

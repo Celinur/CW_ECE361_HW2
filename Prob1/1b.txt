@@ -1,0 +1,61 @@
+/* Celina Wong
+ECE 361 Problem 1b
+Compile and execute application using the gcc command line. Include the source
+code and a console transcript (.txt file) including the terminal output from
+a test case of your choosing. */
+
+//Terminal output of test case, copied and pasted from terminal.
+
+C:\Users\15034\Documents\ECE361HW2\Prob1>gcc 1a.c -o 1a
+
+C:\Users\15034\Documents\ECE361HW2\Prob1>1a
+Enter numbers for row 1: 8 3 9 0 10
+Enter numbers for row 2: 3 5 17 1 1
+Enter numbers for row 3: 2 8 6 23 1
+Enter numbers for row 4: 15 7 3 2 9
+Enter numbers for row 5: 6 14 2 6 0
+
+Row sum: 30 27 40 36 28
+Column sum: 34 37 37 32 21
+
+
+//Source code
+
+#include <stdio.h>
+
+int main() {
+  int array[5][5]; //5x5 array
+  int i, j;
+
+  for (i = 0; i < 5; i++) { //create loop to obtain row of numbers
+    printf("Enter numbers for row %d: ", i + 1);
+
+    for (j = 0; j < 5; j++) {
+      scanf("%d/n", &array[i][j]);
+    }
+  }
+
+  int rowSum[5]; //array to store sum of rows
+  int colSum[5]; //array to store sum of columns
+
+  for (i = 0; i < 5; i++) { //add rows and columns
+    rowSum[i] = 0;
+    colSum[i] = 0;
+    for (j = 0; j <5; j++) {
+      rowSum[i] += array[i][j];
+      colSum[i] += array[j][i];
+    }
+  }
+
+  printf("\nRow sum: "); //print sum of rows
+  for (i = 0; i < 5; i++) {
+    printf("%d ", rowSum[i]);
+  }
+
+  printf("\nColumn sum: "); //print sum of columns
+  for (i = 0; i < 5; i++) {
+    printf("%d ", colSum[i]);
+  }
+
+  return 0;
+}
